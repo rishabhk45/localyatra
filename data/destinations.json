@@ -1,0 +1,74 @@
+[
+  {
+    "id": "manali",
+    "name": "Manali & Kullu Valley",
+    "state": "Himachal Pradesh",
+    "crowdLevel": "High",
+    "crowdBadge": "Crowded in Town • Quiet in Valleys",
+    "crowdNote": "Mall Road & Solang face heavy congestion; Naggar, Tirthan & Old Manali remain peaceful and authentic.",
+    "offbeatAlternative": "Naggar & Tirthan Valley",
+    "defaultBudget": 15000,
+    "suggestedDays": 4,
+    "tagline": "Pine-scented mountains, deodar orchards, and riverside woodcraft cottages."
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur & Amer",
+    "state": "Rajasthan",
+    "crowdLevel": "Moderate",
+    "crowdBadge": "Moderate • Heritage Clusters",
+    "crowdNote": "Hawa Mahal & City Palace are busy; Sanganer block-print hamlets and Amer artisan studios offer calm exploration.",
+    "offbeatAlternative": "Sanganer & Bagru Artisan Villages",
+    "defaultBudget": 18000,
+    "suggestedDays": 3,
+    "tagline": "Terracotta ramparts, block-printing craft families, and royal havelis."
+  },
+  {
+    "id": "varanasi",
+    "name": "Varanasi (Kashi)",
+    "state": "Uttar Pradesh",
+    "crowdLevel": "High",
+    "crowdBadge": "High at Main Ghats • Sacred Calm",
+    "crowdNote": "Dashashwamedh Ghat has dense evening crowds; Assi to Chet Singh Ghats and weaver lanes have serene spiritual pacing.",
+    "offbeatAlternative": "Chet Singh Ghat & Sarnath Monasteries",
+    "defaultBudget": 12000,
+    "suggestedDays": 3,
+    "tagline": "Timeless Ganga sunrise prayers, silk handloom lanes, and slow spiritual walks."
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh & Devprayag",
+    "state": "Uttarakhand",
+    "crowdLevel": "Moderate",
+    "crowdBadge": "Moderate • Ashrams & Trails",
+    "crowdNote": "Laxman Jhula & Tapovan cafes are bustling; Tapovan upper ashrams and Devprayag sangam offer tranquil retreat.",
+    "offbeatAlternative": "Devprayag Sangam & Upper Ashrams",
+    "defaultBudget": 14000,
+    "suggestedDays": 3,
+    "tagline": "Gentle yoga, pristine river confluences, and serene evening bell chimes."
+  },
+  {
+    "id": "hampi",
+    "name": "Hampi & Anegundi",
+    "state": "Karnataka",
+    "crowdLevel": "Low",
+    "crowdBadge": "Low / Serene • Expansive Ruins",
+    "crowdNote": "Expansive boulder landscapes with very low crowd density; ideal for slow heritage photography and seniors.",
+    "offbeatAlternative": "Anegundi Village & Sanapur Lake",
+    "defaultBudget": 13000,
+    "suggestedDays": 3,
+    "tagline": "Golden boulder hills, 14th-century carved stone temples, and quiet coracle rides."
+  },
+  {
+    "id": "munnar",
+    "name": "Munnar & Marayoor",
+    "state": "Kerala",
+    "crowdLevel": "Low",
+    "crowdBadge": "Low / Peaceful • Tea Hamlets",
+    "crowdNote": "Munnar center has tour buses; Marayoor sandalwood forests and spice farm homestays are ultra-peaceful.",
+    "offbeatAlternative": "Marayoor Sandalwood Reserve & Vattavada",
+    "defaultBudget": 16000,
+    "suggestedDays": 4,
+    "tagline": "Emerald mist rolling over organic tea gardens and spice farm homestays."
+  }
+]

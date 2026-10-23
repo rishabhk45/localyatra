@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LocalYatra — Tourism for Everyone, Powered by Locals. AI-style, local-first, inclusive travel web app for India.">
+  <meta name="theme-color" content="#0b5c56">
+  <title>LocalYatra — Tourism for Everyone, Powered by Locals</title>
+  
+  <!-- Relative stylesheet import -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Keyboard Accessibility: Skip to Main Content Link -->
+  <a href="#app-view" class="skip-link">Skip to main content</a>
+
+  <!-- Live region for announcing route and state updates to screen readers -->
+  <div id="route-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <div id="app">
+    <!-- Top Announcement Strip: Transparency on Local-first Storage & Simulation -->
+    <div class="top-notice-bar" role="region" aria-label="Prototype Notice">
+      <span>
+        <strong>Hackathon Prototype:</strong> Local-first. All data is saved on this device (localStorage). 
+        Bookings & payments are simulated.
+      </span>
+      <span class="badge badge-demo">Simulated Demo</span>
+    </div>
+
+    <!-- Application Header -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        
+        <!-- Brand & Tagline -->
+        <a href="#/" class="brand" aria-label="LocalYatra Home">
+          <div class="brand-title-wrap">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span class="brand-name">Local<span class="accent-text">Yatra</span></span>
+          </div>
+          <span class="brand-tagline">Tourism for Everyone, Powered by Locals</span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav id="site-nav" class="site-nav" aria-label="Primary Navigation">
+          <a href="#/" class="nav-link">Home</a>
+          <a href="#/plan" class="nav-link">Plan Trip</a>
+          <a href="#/stays" class="nav-link">Local Stays</a>
+          <a href="#/owner" class="nav-link">Host Dashboard</a>
+          <a href="#/styleguide" class="nav-link">Styleguide</a>
+        </nav>
+
+        <!-- Action Controls: Saral Mode Toggle & Language Placeholder -->
+        <div class="header-actions">
+          <button type="button" id="saral-toggle-btn" class="saral-toggle-btn" aria-pressed="false" title="Toggle large fonts, high contrast and simple layout">
+            <span aria-hidden="true">👓</span>
+            <span class="saral-btn-label">Saral Mode</span>
+          </button>
+
+          <div class="lang-switch" role="group" aria-label="Language selector (demo placeholder)">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="hi" aria-pressed="false">हिंदी</button>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button type="button" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Main Dynamic Route View Container -->
+    <main id="app-view" tabindex="-1">
+      <noscript>
+        <div class="container" style="padding: var(--space-8); text-align: center;">
+          <h2>JavaScript Required</h2>
+          <p>LocalYatra is an on-device, local-first application. Please enable JavaScript to access the trip planner, homestays, and emergency tools.</p>
+        </div>
+      </noscript>
+    </main>
+
+    <!-- Persistent Floating Safety SOS Button (Wired to emergency info in Phase 1, full GPS SOS in Phase 8) -->
+    <button type="button" id="floating-sos-btn" class="floating-sos-btn" aria-label="Emergency Safety SOS">
+      <span class="sos-dot" aria-hidden="true"></span>
+      <span>🚨 SOS Help</span>
+    </button>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div class="footer-col">
+            <h3>LocalYatra</h3>
+            <p>
+              An inclusive, local-first travel prototype empowering India's small homestays, eco-cottages, and certified local guides while offering serene de-crowded alternatives for pilgrims, seniors, and families.
+            </p>
+            <div style="margin-top: var(--space-3);">
+              <span class="badge badge-demo">Simulated Prototype</span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Navigation</h4>
+            <ul>
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/plan">Trip Planner</a></li>
+              <li><a href="#/stays">Homestays & Guides</a></li>
+              <li><a href="#/owner">Hotel Owner Portal</a></li>
+              <li><a href="#/saral">Saral Senior Mode</a></li>
+              <li><a href="#/styleguide">Design System Styleguide</a></li>
+            </ul>
+            <div style="margin-top: var(--space-4); display: flex; flex-direction: column; gap: var(--space-1); font-size: var(--font-xs);">
+              <span style="color: #94a3b8;">Demo: <a href="https://rishabhk45.github.io/localyatra/" target="_blank" rel="noopener noreferrer" style="color: #facc15;">rishabhk45.github.io/localyatra</a></span>
+              <span style="color: #94a3b8;">Code: <a href="https://github.com/rishabhk45/localyatra" target="_blank" rel="noopener noreferrer" style="color: #facc15;">github.com/rishabhk45/localyatra</a></span>
+              <span style="color: #94a3b8;">Contact: <a href="mailto:contact@localyatra.demo" style="color: #facc15;">contact@localyatra.demo</a></span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Indian Emergency Helplines</h4>
+            <div class="emergency-pill-list">
+              <div class="emergency-pill">
+                <span>National Emergency:</span>
+                <strong>112</strong>
+              </div>
+              <div class="emergency-pill">
+                <span>Tourist Helpline:</span>
+                <strong>1363</strong>
+              </div>
+              <div class="emergency-pill">
+                <span>Women Safety:</span>
+                <strong>1091</strong>
+              </div>
+              <div class="emergency-pill">
+                <span>Medical Helpline:</span>
+                <strong>108</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-disclaimer-box">
+            <strong>Local-First Storage Notice:</strong> No user data, passwords, or personal itinerary preferences leave this device. 
+            All state is maintained strictly within browser <code>localStorage</code>. 
+            No commercial payment gateways are active; all booking confirmations are simulated mockups.
+          </div>
+          <p>© 2026 LocalYatra — Built for India's Local Tourism Ecosystem. Accessibility WCAG AA Compliant.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Main ES Module Script -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

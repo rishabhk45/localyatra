@@ -1,0 +1,118 @@
+/* ==========================================================================
+   LocalYatra — Design Tokens & Variables
+   Warm, trustworthy Indian travel palette, accessible typography & scales.
+   All text/background combinations comply with WCAG AA (>= 4.5:1 ratio).
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+:root {
+  /* --- Color Palette: Deep Teal & Warm Saffron/Marigold --- */
+  --color-primary: #0b5c56;          /* Deep Forest Teal (7.2:1 against light bg) */
+  --color-primary-dark: #07403c;     /* Dark Teal for hovers and deep accents */
+  --color-primary-light: #167a73;    /* Mid Teal for cards and focus rings */
+  --color-primary-subtle: #e6f3f2;   /* Soft Teal Tint for active tabs & chips */
+
+  --color-accent: #c25400;           /* Warm Saffron/Marigold (5.1:1 on white) */
+  --color-accent-hover: #9f4400;     /* Deeper Marigold for active/hover */
+  --color-accent-subtle: #fff3ea;    /* Soft Marigold Tint */
+
+  --color-bg: #faf7f2;               /* Warm Off-White Sand Canvas */
+  --color-surface: #ffffff;          /* Clean Card Surface */
+  --color-surface-variant: #f2ece2;  /* Slightly Warm Card / Input / Section */
+  --color-surface-card: #ffffff;
+  
+  --color-text: #1a252f;             /* Dark Slate Body (13.5:1 against #FAF7F2) */
+  --color-text-muted: #536471;       /* Secondary Slate (5.4:1 against white) */
+  --color-text-inverted: #ffffff;    /* Inverted Text on Primary / Accent */
+  --color-border: #ded7cb;           /* Subtle warm border */
+  --color-border-subtle: #ede7dc;
+
+  /* --- Semantic Status Badges --- */
+  --color-verified: #136a38;         /* Verified Local Guide Green */
+  --color-verified-bg: #eaf6ee;
+  --color-local: #9a4800;            /* Authentic Local Homestay Amber */
+  --color-local-bg: #fff4e5;
+  --color-demo: #475569;             /* Simulated / Demo Pill */
+  --color-demo-bg: #f1f5f9;
+  --color-sos: #b91c1c;              /* Safety Alert Crimson */
+  --color-sos-bg: #fef2f2;
+  --color-info: #0369a1;             /* Information Blue */
+  --color-info-bg: #f0f9ff;
+
+  /* --- Typography Scale --- */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --font-xs: 0.75rem;     /* 12px */
+  --font-sm: 0.875rem;    /* 14px */
+  --font-base: 1rem;      /* 16px */
+  --font-md: 1.125rem;    /* 18px */
+  --font-lg: 1.25rem;     /* 20px */
+  --font-xl: 1.5rem;      /* 24px */
+  --font-2xl: 1.875rem;   /* 30px */
+  --font-3xl: 2.25rem;    /* 36px */
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* --- Spacing Scale --- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* --- Radii --- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* --- Shadows & Elevation --- */
+  --shadow-sm: 0 1px 3px rgba(22, 35, 45, 0.08);
+  --shadow-md: 0 4px 12px rgba(22, 35, 45, 0.08), 0 1px 3px rgba(22, 35, 45, 0.04);
+  --shadow-lg: 0 12px 28px rgba(22, 35, 45, 0.12), 0 4px 10px rgba(22, 35, 45, 0.06);
+  --shadow-sos: 0 8px 24px rgba(185, 28, 28, 0.35);
+  --focus-ring: 0 0 0 3px rgba(11, 92, 86, 0.35);
+
+  /* --- Layout & Accessibility Defaults --- */
+  --tap-min: 44px;
+  --max-content-width: 1140px;
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+}
+
+/* ==========================================================================
+   Saral Mode (Senior / Accessible Overrides)
+   Activated when [data-theme="saral"] or .saral-mode is applied to <body>
+   ========================================================================== */
+body.saral-mode,
+[data-theme="saral"] {
+  --color-bg: #fffdfa;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f5eedf;
+  --color-text: #000000;             /* Absolute contrast */
+  --color-text-muted: #2d3748;
+  --color-border: #a89f8f;
+  
+  --font-xs: 1rem;                   /* Elevated min sizes */
+  --font-sm: 1.125rem;
+  --font-base: 1.25rem;              /* 20px base */
+  --font-md: 1.375rem;
+  --font-lg: 1.625rem;
+  --font-xl: 1.875rem;
+  --font-2xl: 2.25rem;
+  --font-3xl: 2.75rem;
+
+  --tap-min: 52px;                   /* Extra-large tap targets */
+  --focus-ring: 0 0 0 4px #000000;   /* High visibility dark focus ring */
+}
